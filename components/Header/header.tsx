@@ -7,7 +7,7 @@ const classes = {
     header: cntl`
     absolute w-full h24 flex
     justify-center md:justify-end 
-    items-center pr-0 md:pr-5
+    items-center pt-5 pr-0 md:pr-5
     `
 }
 

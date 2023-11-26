@@ -11,6 +11,11 @@ const config: Config = {
     extend: {
       colors: {
         primary: COLORS.primary,
+        white: COLORS.white,
+        black: COLORS.black,
+        secondary: COLORS.secondary,
+        background: COLORS.background,
+        error: COLORS.error,
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
