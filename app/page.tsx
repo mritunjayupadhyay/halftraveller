@@ -1,7 +1,8 @@
+'use client'
 import { Header } from '@/components/Header/header'
 import List from '@/components/Sidebar/Sidebar'
-import Image from 'next/image'
-
+import { store } from '@/store'
+import { Provider } from 'react-redux'
 import { Map } from '@/components/Map/Map';
 import cntl from 'cntl';
 
@@ -16,6 +17,7 @@ const classes = {
 
 export default function Home() {
   return (
+    <Provider store={store}>
     <main className="flex min-h-screen flex-col">
       <Header />
       <div>
@@ -29,5 +31,6 @@ export default function Home() {
       </div>
       </div>
     </main>
+    </Provider>
   )
 }
